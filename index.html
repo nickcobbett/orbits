@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+        <!-- <title></title> -->
+        <!-- <meta name="description" content=""> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+        <!--<link rel="stylesheet" href="css/main.css"> -->
+        <style type="text/css">
+
+          #universe {
+            position: relative;
+            background-image: url('./space.jpg');
+            width: 90vw;
+            height: 90vw;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .earth-orbit {
+            position: absolute;
+            height: 50%;
+            width: 50%;
+            /*top: 10px;*/
+            /*left: 10px;*/
+            border: 2px dashed #40b3e8;
+            border-radius: 100%;
+            animation: spin-right 10s linear infinite;
+            display: flex;
+            justify-content: center;
+          }
+
+          .earth-planet {
+            /*position: absolute;*/
+            width: 5%;
+            height: 5%;
+            border-radius: 100%;
+            /*margin-left: 20%;*/
+            background-color: #40b3e8;
+          }
+
+          .sun {
+            position: absolute;
+            width: 25%;
+            height: 25%;
+            border-radius: 100%;
+            background-color: #ffbf00;
+          }
+
+
+          @keyframes spin-right {
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+
+
+        </style>
+    </head>
+    <body>
+
+      <div id="universe">
+        <div class="sun"></div>
+        <div class="earth-orbit">
+          <div class="earth-planet"></div>
+        </div>
+        <!-- <div class="sun"></div> -->
+      </div>
+
+
+        <!-- <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script> -->
+
+
+        <!-- <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+    </body>
+</html>
