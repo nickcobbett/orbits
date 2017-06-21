@@ -1,0 +1,91 @@
+#solar-system {
+  position: relative;
+  background-color: #56554f;
+  /*background-image: url('./space.png') no-repeat center center fixed;*/
+  width: 75vw;
+  height: 75vw;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.earth-orbit {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  border: 1px dashed #40b3e8;
+  /*border-radius: 100%;*/
+  display: flex;
+  justify-content: center;
+
+}
+
+.orbit-radius {
+  border-radius: 100%;
+}
+
+.animate {
+  animation: spin-right 10s linear infinite;
+}
+
+
+.earth-body {
+  width: 10%;
+  height: 10%;
+  border-radius: 100%;
+  margin: 8%;
+  background-color: #40b3e8;
+}
+
+.moon-orbit {
+  position: absolute;
+  border: 1px dashed #f2f0e3;
+  /*border-radius: 100%;*/
+  width: 25%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  /*animation: spin-right 10s linear infinite;*/
+}
+
+.moon-body {
+  width: 20%;
+  height: 20%;
+  background-color: #f2f0e3;
+  border-radius: 50%;
+}
+
+.mars-orbit {
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  border: 1px dashed #e24d16;
+  /*border-radius: 50%;*/
+  display: flex;
+  justify-content: center;
+  /*animation: spin-right 15s linear infinite;*/
+}
+
+.mars-body {
+  width: 8%;
+  height: 8%;
+  border-radius: 50%;
+  background-color: #e24d16;
+  /*transform: translateX(0px);*/
+}
+
+.sun {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border-radius: 100%;
+  background-color: #ffbf00;
+}
+
+
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
