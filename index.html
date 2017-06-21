@@ -103,16 +103,23 @@
   <body>
   <div class="container">
     <div id="solar-system">
-      <div class="sun"></div>
-      <div class="earth-orbit orbit">
-        <div class="earth-body"></div>
-        <div class="moon-orbit orbit">
-          <div class="moon-body"></div>
+      <div class="body body-sun"></div>
+      <div class="orbit orbit-mercury">
+        <div class="body body-mercury"></div>
+      </div>
+      <div class="orbit orbit-venus">
+        <div class="body body-venus"></div>
+      </div>
+      <div class="orbit orbit-earth">
+        <div class="body body-earth"></div>
+        <div class="orbit orbit-moon">
+          <div class="body body-moon"></div>
         </div>
       </div>
-      <div class="mars-orbit orbit">
-        <div class="mars-body"></div>
+      <div class="orbit orbit-mars">
+        <div class="body body-mars"></div>
       </div>
+
     </div>
     <button onclick="toggleAnimation()">toggle animate</button>
     <button onclick="toggleOrbitShape()">toggle orbit shape</button>
