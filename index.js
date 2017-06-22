@@ -17,26 +17,20 @@
   };
 
 $(function() {
-
   var slider = document.getElementById('speed');
-  var prevSliderVals = [0, 0, 0, 0, 0];
+
+  var orbits = document.querySelectorAll('.orbit');
+  var prevSliderVal = 0;
+  var prevSpeeds = [];
+  orbits.forEach(orbit => prevSpeeds.push(parseFloat(window.getComputedStyle(orbit).animationDuration)));
 
   var adjustOrbitSpeed = (e) => {
     var sliderVal = adjustSliderVal(e.target.value);
     var orbits = document.querySelectorAll('.orbit');
     orbits.forEach((orbit, i) => {
-      console.log(orbit)
-      var style = window.getComputedStyle(orbit);
-      var origSpeed = parseFloat(style.animationDuration);
-      console.log('origSpeed', origSpeed);
-      // console.log('adjustSliderVal', sliderVal);
-      // console.log(sliderVal - prevSliderVal)
-      var newSpeed = origSpeed + (origSpeed * ((sliderVal - prevSliderVals[i]) / 10));
-      // console.log(newSpeed);
-
+      var prevSpeed = prevSpeeds[i];
+      var newSpeed = prevSpeed + (prevSpeed * sliderVal / 50);
       orbit.style.animationDuration = newSpeed.toString() + 's';
-      // console.log(orbit.style.animationDuration)
-      prevSliderVals[i] = sliderVal;
     });
   }
 
