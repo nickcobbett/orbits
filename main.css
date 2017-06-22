@@ -31,15 +31,15 @@
   border: 1px dashed #db690d;
   display: flex;
   justify-content: center;
-  animation-duration: 1.59s;
+  animation-duration: 1.589041096s;
 }
 
 .orbit-venus {
   position: absolute;
-  height: 40%;
-  width: 40%;
+  height: 38%;
+  width: 38%;
   border: 1px dashed #f9f69d;
-  animation-duration: 6.14s;
+  animation-duration: 6.136986301s;
   display: flex;
   justify-content: center;
 }
@@ -76,16 +76,16 @@
 }
 
 .body-mercury {
-  width: 1.9vw;
-  height: 1.9vw;
+  width: 1.898734177vw;
+  height: 1.898734177vw;
   transform: translateY(-50%);
   background-color: #db690d;
   border-radius: 50%;
 }
 
 .body-venus {
-  width: 4.75vw;
-  height: 4.75vw;
+  width: 4.746835443vw;
+  height: 4.746835443vw;
   transform: translateY(-50%);
   background-color: #f9f69d;
   border-radius: 50%;
@@ -100,16 +100,16 @@
 }
 
 .body-moon {
-  width: 1.37vw;
-  height: 1.37vw;
+  width: 1.366455696vw;
+  height: 1.366455696vw;
   transform: translateY(-50%);
   background-color: #f2f0e3;
   border-radius: 50%;
 }
 
 .body-mars {
-  width: 2.66vw;
-  height: 2.66vw;
+  width: 2.658227848vw;
+  height: 2.658227848vw;
   border-radius: 50%;
   transform: translateY(-50%);
   background-color: #e24d16;
