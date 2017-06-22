@@ -17,10 +17,8 @@
   };
 
 $(function() {
-  var slider = document.getElementById('speed');
 
   var orbits = document.querySelectorAll('.orbit');
-  var prevSliderVal = 0;
   var prevSpeeds = [];
   orbits.forEach(orbit => prevSpeeds.push(parseFloat(window.getComputedStyle(orbit).animationDuration)));
 
@@ -34,7 +32,7 @@ $(function() {
     });
   }
 
-
+  var slider = document.getElementById('speed');
   slider.addEventListener('input', adjustOrbitSpeed);
 
-})
+});
