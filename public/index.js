@@ -19,15 +19,15 @@
 $(function() {
 
   var orbits = document.querySelectorAll('.orbit');
-  var prevSpeeds = [];
-  orbits.forEach(orbit => prevSpeeds.push(parseFloat(window.getComputedStyle(orbit).animationDuration)));
+  var origSpeeds = [];
+  orbits.forEach(orbit => origSpeeds.push(parseFloat(window.getComputedStyle(orbit).animationDuration)));
 
   var adjustOrbitSpeed = (e) => {
     var sliderVal = adjustSliderVal(e.target.value);
     var orbits = document.querySelectorAll('.orbit');
     orbits.forEach((orbit, i) => {
-      var prevSpeed = prevSpeeds[i];
-      var newSpeed = prevSpeed + (prevSpeed * sliderVal / 50);
+      var origSpeed = origSpeeds[i];
+      var newSpeed = origSpeed + (origSpeed * sliderVal / 50);
       orbit.style.animationDuration = newSpeed.toString() + 's';
     });
   }
