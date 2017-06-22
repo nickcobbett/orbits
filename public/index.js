@@ -17,6 +17,8 @@
   };
 
 $(function() {
+  toggleAnimation();
+  toggleOrbitShape();
 
   var orbits = document.querySelectorAll('.orbit');
   var origSpeeds = [];
