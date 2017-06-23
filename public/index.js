@@ -29,7 +29,7 @@ $(function() {
     var orbits = document.querySelectorAll('.orbit');
     orbits.forEach((orbit, i) => {
       var origSpeed = origSpeeds[i];
-      var newSpeed = origSpeed + (origSpeed * sliderVal / 50);
+      var newSpeed = origSpeed - (origSpeed * sliderVal / 50);
       orbit.style.animationDuration = newSpeed.toString() + 's';
     });
   }
